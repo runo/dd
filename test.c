@@ -18,7 +18,7 @@ int main() {
 
     // put your code here :)
 
-    fprintf(stdout, "the quick brown fox jumps over the lazy dog :)");
+    fprintf(stdout, "the quick brown fox jumps over the lazy dog :)\n");
 
     return (0);
 }
