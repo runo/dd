@@ -5,6 +5,89 @@ GIT LOR
 --------------------------------------------------------------------------------
 
 
+CONFIGURATION
+--------------------------------------------------------------------------------
+Before you start using Git fir the first time, you need to set two global 
+configuration values, "user.email" and "user.name", or else you won't be able 
+to make new commits, here's how:
+
+$ git config --global user.name 'Runo Yu'
+$ git config --global user.email 'runoyu@gmail.com'
+
+// doing it if you want to check it again
+$ git config --global --list
+
+
+
+GETTING STARTED
+--------------------------------------------------------------------------------
+$ mkdir -p ~/rep/github/dd
+$ git init
+$ touch ./readme
+$ git add ./readme
+$ git commit -m 'first chkpnt'
+$ git remote add origin git@github.com:runo/dd.git
+$ git push origin master
+
+  DETAILS
+  ------------------------------------------------------------------------------
+  git help    : git-help - display help information about git
+    .. [cmd]  : such as: $ git help remote
+    
+    $ git help help
+    $ git help git-help
+    $ git help init
+    $ git help git-init
+
+
+  git init    : git-init - create an emtpy git repository 
+                or reinitialize an existing onen
+
+    $ 
+
+  git add     : git-add - add file contents to the index
+    // tell git to take a snapshot of the contents of all files under currenty 
+    // directory (note the .), with git add:
+    $ git add .
+
+    // modify some files, then add their updated contents to the index:
+    $ git add file1 file2 file3 [file... filen]
+
+  git commit  : git-commit - record changes to the repository
+    -m <msg>, --message=<msg> : use the given <msg> as the commit message.
+
+    $ git commit -m 'put some mesg here to show others what you have done'
+
+  git remote  : git-remote - manage set of tracked repositories
+  git push    : git-push - update remote refs along with associated objects
+
+
+MORE ABOUT IT
+--------------------------------------------------------------------------------
+// you are now ready to commit, you can see what is about to be commited using 
+// git diff with the --cached option:
+$ git diff --cached
+
+CLONING A COPY
+--------------------------------------------------------------------------------
+
+$ cd ~/rep/kernel/
+$
+
+
+REFERENCE
+--------------------------------------------------------------------------------
+* gittutorial(7) manpg
+  <http://www.kernel.org/pub/software/scm/git/docs/gittutorial.html>
+
+* everyday git with 20 commands or so
+  <http://www.kernel.org/pub/software/scm/git/docs/everyday.html>
+
+* git user's manual (for version 1.5.3 or newer)
+  <http://www.kernel.org/pub/software/scm/git/docs/user-manual.html>
+
+* git(1) manpg (v1.7.3.4)
+  <http://www.kernel.org/pub/software/scm/git/docs/v1.7.3.4/git.html>
 
 
 --------------------------------------------------------------------------------
