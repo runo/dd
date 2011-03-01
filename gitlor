@@ -68,11 +68,12 @@ MORE ABOUT IT
 // git diff with the --cached option:
 $ git diff --cached
 
-CLONING A COPY
+
+CLONING IT
 --------------------------------------------------------------------------------
 
-$ cd ~/rep/kernel/
-$
+$ cd ~/rep/githost
+$ git clone git@githost.com:runo/dd.git
 
 
 REFERENCE
